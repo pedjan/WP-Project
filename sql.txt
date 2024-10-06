@@ -1,0 +1,5 @@
+create table User (id int auto_increment, nick varchar(100), sifra varchar(100), ime varchar(100), opis varchar(100), email varchar(100), rodjendan varchar(100), pol varchar(1), admin int, primary key (id));
+
+create table Post (id int auto_increment, time varchar(100), content varchar(256), likes int, dislikes int, userId int, slika varchar(100), link varchar(100), primary key (id), foreign key (userId) references User(id));
+
+create table Comment(id int auto_increment, time varchar(100), content varchar(256), userId int, postId int, primary key (id), foreign key (userId) references User(id), foreign key (postId) references Post(id));

@@ -1,0 +1,32 @@
+.navigacija {	
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+    margin-left: -8px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.navigacija a {
+	display: inline-block;
+	text-decoration: none;
+	padding: 10px 15px;
+}
+
+.navigacija a:hover {
+	background-color: rgb(159,179,189);
+}
+
+.navigacija a, .navigacija a:visited {
+	color: white;
+}
+
+#logout-button {
+	float: right;
+	width: 70px;
+}
+
+.tamno {
+	color: white;
+	background-color: #704c4c;
+}
